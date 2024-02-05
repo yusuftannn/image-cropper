@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="keywords" content="" />
+    <meta name="title" content="" />
+    <meta name="author" content="Yusuf Tan" />
+    <meta name="description" content="" />
+    <title>Image Cropper Project</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Cropper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="custom-wrapper">
+      <!-- Image display start -->
+      <div class="custom-container">
+        <div class="custom-image-container">
+          <img id="custom-image" />
+        </div>
+        <div class="custom-preview-container">
+          <img id="custom-preview-image" />
+        </div>
+      </div>
+      <!-- Image display end -->
+      <!-- Choose A Photo start -->
+      <input type="file" id="custom-file" accept="image/*" />
+      <label for="custom-file">Choose A Photo</label>
+      <!-- Choose A Photo end -->
+      <!-- Aspect Ratio Buttons start -->
+      <div class="custom-options custom-hide">
+        <input
+          type="number"
+          id="custom-height-input"
+          placeholder="Enter Height"
+          max="780"
+        />
+        <input
+          type="number"
+          id="custom-width-input"
+          placeholder="Enter Width"
+          max="780"
+        />
+
+        <button class="custom-aspect-ratio-button">16:9</button>
+        <button class="custom-aspect-ratio-button">4:3</button>
+        <button class="custom-aspect-ratio-button">1:1</button>
+        <button class="custom-aspect-ratio-button">2:3</button>
+        <button class="custom-aspect-ratio-button">Free</button>
+      </div>
+      <!-- Aspect Ratio Buttons end -->
+      <!-- Preview and Download start -->
+      <div class="custom-btns">
+        <button id="custom-preview" class="custom-hide">Preview</button>
+        <a href="" id="custom-download" class="custom-hide">Download</a>
+      </div>
+      <!-- Preview and Download end -->
+    </div>
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright &copy; 2024. All Rights Reserved. Powered by yusuftan.com.tr
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+
+  <!-- scripts -->
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+</html>
